@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>game</title>
+    <script src="/js/config.js" defer></script>
+    <script src="/js/app.js" defer></script>
+</head>
+<body>
+    <div id="allOverlay"></div>
+    <header>
+        <h1>Paly Tic Tac Toe</h1>
+        <p>Built with HTML, CSS and Jvascript and -of course -lots of love</p>
+    </header>
+
+    <section id="players">
+        <div class="player-1">
+            <h3>Player 1</h3>
+            <h1 id="player-1-name">Player Name</h1>
+            <h1 id="player-1-selection">X</h1>
+            <button class="edit-btn" id="edit-btn-1" data-playerid="1">Edit</button>
+        </div>
+        <div class="player-2">
+            <h3>Player 2</h3>
+            <h1 id="player-2-name">Player Name</h1>
+            <h1 id="player-2-selection">X</h1>
+            <button class="edit-btn" id="edit-btn-2" data-playerid="2">Edit</button>
+        </div>
+    </section>
+    <div id="new-game">
+        <button id="start-new-game">Start New Game</button>
+    </div>
+
+    <aside id="overlay-1">
+        <form action="">
+            <h1>Choose Your Name</h1>
+            <label for="playerName">Player Name</label>
+            <input type="text" name="player-name" id="playerName">
+            <p id="error-message" style="margin-bottom: 1rem;"></p>
+            <button id="cancel-btn" type="reset">Cancel</button>
+            <button id="confirm-btn" type="submit">Confirm</button>
+        </form>
+    </aside>
+
+    <aside id="overlay-2">
+        <h1>You won, Edmond</h1>
+        <p>Click "Start New Game" above, to start a new game!</p>
+    </aside>
+
+    <div id="game-board">
+        <p>It is your turn <span><strong id="active-player-name">Manu!</strong></span></p>
+        <ul id="list-wrapper">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>
